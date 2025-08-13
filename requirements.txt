@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-dotenv
+fpdf
+python-multipart
+pydantic
+python-docx
+pymupdf
+tqdm
+pdfminer.six
+PyPDF2

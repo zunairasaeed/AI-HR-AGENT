@@ -359,19 +359,140 @@
 #         except Exception as e:
 #             st.error(f"❌ Something went wrong: {e}")
 
+                                        
+
+
+
+                                    #WORKINGGGGGGGGG
+# import streamlit as st
+# import requests
+# import time
+# BACKEND_URL = "https://web-production-ffce.up.railway.app"
+
+# # ====== CONFIG ======
+# FASTAPI_BASE_URL = "http://localhost:8000"  # Change if your FastAPI runs elsewhere
+
+# # ====== PAGE SETTINGS ======
+# st.set_page_config(page_title="HR Agent Dashboard", layout="centered")
+# st.title("🧠 HR Agent Dashboard")
+
+# # ====== UPLOAD SECTION ======
+# st.header("📤 Upload Resume & Job Description")
+
+# resume = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"], key="resume")
+# jd = st.file_uploader("Upload Job Description (PDF or DOCX)", type=["pdf", "docx"], key="jd")
+
+# if "stage" not in st.session_state:
+#     st.session_state.stage = 0
+
+
+# # ====== UTILS ======
+# def show_progress(stage):
+#     steps = ["Uploading", "Running AI Pipeline", "Fetching Results", "Complete"]
+#     for idx, step in enumerate(steps):
+#         icon = "🔄" if stage == idx else "✅" if stage > idx else "⬜"
+#         st.markdown(f"{icon} {step}")
+
+
+# def download_file_from_fastapi(endpoint, filename):
+#     try:
+#         response = requests.get(f"{FASTAPI_BASE_URL}{endpoint}")
+#         if response.status_code == 200:
+#             return response.content, filename
+#         else:
+#             st.error(f"❌ Failed to fetch file from {endpoint}: {response.json().get('error', 'Unknown error')}")
+#             return None, None
+#     except requests.exceptions.RequestException as e:
+#         st.error(f"❌ Error fetching from {endpoint}: {e}")
+#         return None, None
+
+
+# # ====== PROGRESS SECTION ======
+# st.header("🔄 Pipeline Progress")
+# show_progress(st.session_state.stage)
+
+
+# # ====== RUN PIPELINE ======
+# if st.button("🚀 Run Matching Pipeline"):
+#     if not resume or not jd:
+#         st.warning("⚠️ Please upload both a resume and a job description before running the pipeline.")
+#     else:
+#         try:
+#             # Step 1: Upload files to FastAPI
+#             st.session_state.stage = 0
+#             show_progress(st.session_state.stage)
+#             with st.spinner("📤 Uploading files..."):
+#                 files = {
+#                     "resume": (resume.name, resume, resume.type),
+#                     "jd": (jd.name, jd, jd.type),
+#                 }
+#                 upload_res = requests.post(f"{FASTAPI_BASE_URL}/upload", files=files)
+
+#             if upload_res.status_code != 200:
+#                 st.error(f"❌ Upload failed: {upload_res.json().get('error', 'Unknown error')}")
+#             else:
+#                 # Step 2: Simulate running AI pipeline
+#                 st.session_state.stage = 1
+#                 show_progress(st.session_state.stage)
+#                 time.sleep(2)  # simulate delay, replace with actual polling if available
+
+#                 # Step 3: Fetch results (if you have /results endpoint)
+#                 st.session_state.stage = 2
+#                 show_progress(st.session_state.stage)
+
+#                 # OPTIONAL: Implement results fetching logic here if you have an endpoint
+
+#                 # Step 4: Complete
+#                 st.session_state.stage = 3
+#                 show_progress(st.session_state.stage)
+
+#                 st.success("✅ Pipeline executed successfully!")
+
+#                 # ====== DOWNLOAD SECTION ======
+#                 st.header("📥 Download Outputs")
+
+#                 # Download Rankings PDF
+#                 pdf_bytes, pdf_filename = download_file_from_fastapi(
+#                     "/download/rankings-pdf", "rankings_combined.pdf"
+#                 )
+#                 if pdf_bytes:
+#                     st.download_button(
+#                         label="⬇️ Download Rankings PDF",
+#                         data=pdf_bytes,
+#                         file_name=pdf_filename,
+#                         mime="application/pdf",
+#                     )
+
+#                 # Download Tailored CVs ZIP
+#                 docx_bytes, docx_filename = download_file_from_fastapi(
+#                     "/download/tailored-cv-docx", "tailored_cvs.zip"
+#                 )
+#                 if docx_bytes:
+#                     st.download_button(
+#                         label="⬇️ Download Tailored CVs ZIP",
+#                         data=docx_bytes,
+#                         file_name=docx_filename,
+#                         mime="application/zip",
+#                     )
+
+#         except Exception as e:
+#             st.error(f"❌ Something went wrong: {e}")
 
 import streamlit as st
 import requests
 import time
 
-# ====== CONFIG ======
-FASTAPI_BASE_URL = "http://localhost:8000"  # Change if your FastAPI runs elsewhere
+# ========= CONFIG =========
+# Use your deployed FastAPI on Railway:
+FASTAPI_BASE_URL = "https://web-production-ffce.up.railway.app"  # <-- EDITED
 
-# ====== PAGE SETTINGS ======
+REQUEST_TIMEOUT = 60  # seconds (adjust if your pipeline takes longer)
+
+# ========= PAGE SETTINGS =========
 st.set_page_config(page_title="HR Agent Dashboard", layout="centered")
 st.title("🧠 HR Agent Dashboard")
 
-# ====== UPLOAD SECTION ======
+# ========= UPLOAD SECTION =========
 st.header("📤 Upload Resume & Job Description")
 
 resume = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"], key="resume")
@@ -380,34 +501,37 @@ jd = st.file_uploader("Upload Job Description (PDF or DOCX)", type=["pdf", "docx
 if "stage" not in st.session_state:
     st.session_state.stage = 0
 
-
-# ====== UTILS ======
-def show_progress(stage):
+# ========= UTILS =========
+def show_progress(stage: int):
     steps = ["Uploading", "Running AI Pipeline", "Fetching Results", "Complete"]
     for idx, step in enumerate(steps):
         icon = "🔄" if stage == idx else "✅" if stage > idx else "⬜"
         st.markdown(f"{icon} {step}")
 
-
-def download_file_from_fastapi(endpoint, filename):
+def download_file_from_fastapi(endpoint: str, filename: str):
+    """GET a file from FastAPI and return bytes for Streamlit's download_button."""
+    url = f"{FASTAPI_BASE_URL}{endpoint}"
     try:
-        response = requests.get(f"{FASTAPI_BASE_URL}{endpoint}")
-        if response.status_code == 200:
-            return response.content, filename
+        r = requests.get(url, timeout=REQUEST_TIMEOUT)
+        if r.status_code == 200:
+            return r.content, filename
         else:
-            st.error(f"❌ Failed to fetch file from {endpoint}: {response.json().get('error', 'Unknown error')}")
+            # Try to show JSON error if backend sent one
+            try:
+                err = r.json().get("error", r.text)
+            except Exception:
+                err = r.text
+            st.error(f"❌ Failed to fetch from {endpoint}: {err}")
             return None, None
     except requests.exceptions.RequestException as e:
-        st.error(f"❌ Error fetching from {endpoint}: {e}")
+        st.error(f"❌ Network error fetching {endpoint}: {e}")
         return None, None
 
-
-# ====== PROGRESS SECTION ======
+# ========= PROGRESS SECTION =========
 st.header("🔄 Pipeline Progress")
 show_progress(st.session_state.stage)
 
-
-# ====== RUN PIPELINE ======
+# ========= RUN PIPELINE =========
 if st.button("🚀 Run Matching Pipeline"):
     if not resume or not jd:
         st.warning("⚠️ Please upload both a resume and a job description before running the pipeline.")
@@ -417,25 +541,33 @@ if st.button("🚀 Run Matching Pipeline"):
             st.session_state.stage = 0
             show_progress(st.session_state.stage)
             with st.spinner("📤 Uploading files..."):
+                # IMPORTANT: send bytes using getvalue()
                 files = {
-                    "resume": (resume.name, resume, resume.type),
-                    "jd": (jd.name, jd, jd.type),
+                    "resume": (resume.name, resume.getvalue(), resume.type or "application/octet-stream"),
+                    "jd": (jd.name, jd.getvalue(), jd.type or "application/octet-stream"),
                 }
-                upload_res = requests.post(f"{FASTAPI_BASE_URL}/upload", files=files)
+                upload_res = requests.post(
+                    f"{FASTAPI_BASE_URL}/upload",
+                    files=files,
+                    timeout=REQUEST_TIMEOUT,
+                )
 
             if upload_res.status_code != 200:
-                st.error(f"❌ Upload failed: {upload_res.json().get('error', 'Unknown error')}")
+                # Try to show JSON error if backend sent one
+                try:
+                    err = upload_res.json().get("error", upload_res.text)
+                except Exception:
+                    err = upload_res.text
+                st.error(f"❌ Upload failed: {err}")
             else:
-                # Step 2: Simulate running AI pipeline
+                # Step 2: Simulate running AI pipeline (replace with actual polling if you have it)
                 st.session_state.stage = 1
                 show_progress(st.session_state.stage)
-                time.sleep(2)  # simulate delay, replace with actual polling if available
+                time.sleep(2)  # simulate delay
 
-                # Step 3: Fetch results (if you have /results endpoint)
+                # Step 3: Fetch results (if your backend exposes any status/results endpoint, call it here)
                 st.session_state.stage = 2
                 show_progress(st.session_state.stage)
-
-                # OPTIONAL: Implement results fetching logic here if you have an endpoint
 
                 # Step 4: Complete
                 st.session_state.stage = 3
@@ -443,10 +575,10 @@ if st.button("🚀 Run Matching Pipeline"):
 
                 st.success("✅ Pipeline executed successfully!")
 
-                # ====== DOWNLOAD SECTION ======
+                # ========= DOWNLOAD SECTION =========
                 st.header("📥 Download Outputs")
 
-                # Download Rankings PDF
+                # Download Rankings PDF (your backend must implement this endpoint)
                 pdf_bytes, pdf_filename = download_file_from_fastapi(
                     "/download/rankings-pdf", "rankings_combined.pdf"
                 )
@@ -458,7 +590,7 @@ if st.button("🚀 Run Matching Pipeline"):
                         mime="application/pdf",
                     )
 
-                # Download Tailored CVs ZIP
+                # Download Tailored CVs ZIP (your backend must implement this endpoint)
                 docx_bytes, docx_filename = download_file_from_fastapi(
                     "/download/tailored-cv-docx", "tailored_cvs.zip"
                 )
@@ -472,3 +604,7 @@ if st.button("🚀 Run Matching Pipeline"):
 
         except Exception as e:
             st.error(f"❌ Something went wrong: {e}")
+
+# Optional: quick link to your FastAPI docs so you can verify endpoints manually
+st.caption("Need to check the backend? Open your FastAPI docs:")
+st.link_button("Open FastAPI Swagger", f"{FASTAPI_BASE_URL}/docs")

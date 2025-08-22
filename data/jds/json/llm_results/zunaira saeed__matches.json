@@ -1,0 +1,257 @@
+{
+    "resume_file": "zunaira saeed.json",
+    "candidate_name": "Zunaira Saeed",
+    "email": "zunairasaeed988@gmail.com",
+    "phone": "92 3478404160",
+    "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+    "matched_jobs": [
+        {
+            "job_role": "Azure Data Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python",
+                        "SQL"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "Power BI"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 13,
+            "bonus_score": 0,
+            "max_score_among_candidates": 38,
+            "final_percentage": 34.21,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed is not a strong fit for the Azure Data Engineer role. While they possess relevant skills like Python, SQL, Power BI, and project experience in data visualization and predictive analytics, they lack expertise in Azure-specific tools (e.g., Azure Data Factory, Synapse Analytics, Databricks, Data Lake Storage Gen2) and big data technologies like PySpark and HDInsight. Additionally, there is no mention of experience with CI/CD pipelines, Azure DevOps, or data governance, which are critical for this role."
+        },
+        {
+            "job_role": "Python Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "oop",
+                        "sql"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "mysql"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "mysql"
+                    ],
+                    "score": 2
+                }
+            },
+            "total_score": 18,
+            "bonus_score": 2,
+            "max_score_among_candidates": 21,
+            "final_percentage": 87.71,
+            "qualified": true,
+            "llm_summary": "Zunaira Saeed demonstrates strong proficiency in Python, SQL, MySQL, Object-Oriented Programming (OOP), and Data Structures & Algorithms, which align with the must-have requirements for the Python Developer role. However, the candidate lacks explicit experience with frameworks like Flask or Django, REST APIs, and unit testing, which are critical for the role. While they possess some nice-to-have skills (e.g., MySQL), they may need additional training to fully meet the job requirements."
+        },
+        {
+            "job_role": "Machine Learning Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 2
+                }
+            },
+            "total_score": 8,
+            "bonus_score": 2,
+            "max_score_among_candidates": 24,
+            "final_percentage": 35.33,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed demonstrates strong programming skills in Python and experience with Jupyter Notebook, which aligns with the nice-to-have tools for the role. However, the candidate lacks explicit experience with core machine learning frameworks like TensorFlow, Keras, or Scikit-learn, as well as key ML concepts such as data preprocessing, model evaluation, and deep learning. Thus, they are not a strong fit for the Machine Learning Engineer role."
+        },
+        {
+            "job_role": "DevOps Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 0,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed is not a good fit for the DevOps Engineer role. While they have strong programming skills (e.g., Python, SQL) and experience in project management and cloud computing, they lack key DevOps-specific skills such as Linux, Docker, Kubernetes, CI/CD, infrastructure as code, and AWS. Additionally, there is no mention of tools like Terraform, Jenkins, or scripting expertise relevant to DevOps."
+        },
+        {
+            "job_role": "Full Stack Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql",
+                        "react",
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "score": 25
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 25,
+            "bonus_score": 0,
+            "max_score_among_candidates": 25,
+            "final_percentage": 100.0,
+            "qualified": true,
+            "llm_summary": "Zunaira Saeed possesses foundational skills relevant to a Full Stack Developer role, such as SQL, HTML, CSS, and some experience with web application development and React Native. However, the candidate lacks key must-have skills like JavaScript, Node.js, Express, REST API, and authentication, which are critical for this role. While they demonstrate strong problem-solving and project experience, they are not a strong fit for this position without additional training in backend and full-stack-specific technologies."
+        },
+        {
+            "job_role": "Software QA Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed is not a strong fit for the Software QA Engineer role. While they have Python skills and experience in problem-solving and project management, they lack key must-have skills such as manual testing, Selenium, test cases, bug reporting, and test automation. Additionally, there is no mention of experience with QA-specific tools like JIRA, Postman, or TestNG."
+        },
+        {
+            "job_role": "Frontend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "css",
+                        "react",
+                        "javascript"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 20,
+            "bonus_score": 0,
+            "max_score_among_candidates": 20,
+            "final_percentage": 100.0,
+            "qualified": true,
+            "llm_summary": "Zunaira Saeed has foundational skills in HTML, CSS, and Bootstrap, which are relevant for frontend development, but lacks key must-have technologies such as JavaScript, React, TypeScript, Redux, and REST API. Additionally, there is no mention of experience with tools like Webpack, Figma, or Git. While the candidate demonstrates strong problem-solving and project management skills, they are not a strong fit for this Frontend Developer role due to the absence of critical technical requirements."
+        },
+        {
+            "job_role": "Data Analyst",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "sql"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 2
+                }
+            },
+            "total_score": 13,
+            "bonus_score": 2,
+            "max_score_among_candidates": 29,
+            "final_percentage": 46.83,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed is a good fit for the Data Analyst role as they possess key must-have skills such as SQL, Python, Power BI, and Jupyter Notebook, along with experience in data visualization and database management through projects like \"Customer Engagement System\" and \"Customer Churn Prediction.\" While they lack explicit mention of Excel, pandas, and pivot tables, their problem-solving and project management skills suggest adaptability to learn these tools quickly."
+        },
+        {
+            "job_role": "Backend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 11,
+            "final_percentage": 45.45,
+            "qualified": false,
+            "llm_summary": "Zunaira Saeed is not a strong fit for the Backend Developer role. While they have SQL and database management experience, they lack key must-have skills such as Node.js, Express, REST API, authentication, microservices, and MongoDB. Additionally, their experience and projects focus more on GUI development, data visualization, and general programming rather than backend-specific technologies and practices."
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "CANDIDATE_NAME": "Zunaira Saeed",
+  "TARGET_JOB": "Frontend Developer",
+  "TEMPLATE_USED": "Word Template",
+  "Personal Info": "Name: Zunaira Saeed\nEmail: zunairasaeed988@gmail.com\nPhone: 92 3478404160\nLinkedin: https://www.linkedin.com/in/zunaira-saeed-",
+  "Profile": "**  \nInnovative and detail-oriented Frontend Developer with a strong foundation in modern web technologies, including React, TypeScript, JavaScript, HTML, CSS, and Redux. Adept at creating responsive, user-friendly interfaces and delivering seamless user experiences. Demonstrated leadership and collaboration skills through roles such as Director General and Cloud Computing Lead at ACM UET, where mentoring, organizing workshops, and fostering hands-on learning were key responsibilities. Experienced in managing and executing technical projects, including developing interactive web applications, GUI-based systems, and data visualization dashboards. Passionate about leveraging technical expertise and creative problem-solving to build impactful digital solutions. Proficient in version control using Git and committed to continuous learning and professional growth in the ever-evolving tech landscape.",
+  "Skills": "- Git\n- Redux\n- TypeScript\n- css\n- html\n- javascript\n- react",
+  "Certifications": "\n- ",
+  "Functional Skills": [
+    "```python\n[\"User Experience Design\"",
+    "\"Responsive Design\"",
+    "\"Cross-Browser Compatibility\"",
+    "\"Problem Solving\"",
+    "\"Collaboration\"",
+    "\"Attention to Detail\"",
+    "\"Time Management\"]\n```"
+  ],
+  "Business Sector": [
+    "IT Services",
+    "Software Development"
+  ],
+  "Languages": "- English\n- Urdu",
+  "Work Experience": "**Director General**  \n*ACM UET*  \n- Led cross-functional teams to organize high-impact technology events, fostering collaboration and innovation.  \n- Mentored students and facilitated workshops focused on emerging technologies, including frontend development tools and practices.  \n\n**Cloud Computing Lead**  \n*ACM UET*  \n- Directed the Cloud Computing team, promoting hands-on learning and guiding members through technical workshops.  \n- Delivered training sessions on cloud-based solutions, emphasizing integration with modern web development frameworks.  \n\n**Event Organizer**  \n*ACM UET*  \n- Co-organized UTS 6.0, managing event logistics, securing sponsorships, and ensuring successful execution.  \n- Applied organizational and communication skills to create engaging experiences for attendees.  \n\n**Community Outreach Head**  \n*Cybersecurity Society*  \n- Established partnerships with external organizations to create learning and networking opportunities for students.  \n- Advocated for technology-driven initiatives, connecting communities with industry professionals.",
+  "Education": "**BSc.**, University of Engineering and Technology, Lahore (03/2025 - 03/2026)\n\n**FSc.**, Punjab Group of Colleges (08/2020 - 05/2022)",
+  "Projects": "#### **Bank Management System**  \n- Developed a GUI-based banking application using **OOP principles** to manage customer accounts and transactions.  \n- Integrated an **SQL database** for secure and efficient data storage and retrieval.  \n- Focused on user-friendly design and scalability, showcasing strong problem-solving and backend integration skills.\n\n#### **Customer Engagement System**  \n- Built a web-based database management system to organize supplier and dealer data.  \n- Implemented **data visualization** using **Power BI** and a dynamic web dashboard to generate detailed reports and charts.  \n- Demonstrated proficiency in **frontend development** and integrating data-driven insights into user interfaces.\n\n#### **Kids Phonics Game**  \n- Designed and developed a responsive phonics learning application for children (ages 1\u20137) using **HTML**, **CSS**, **JavaScript**, and **React**.  \n- Incorporated multi-platform deployment (web, app, desktop) and recorded voice data for interactive learning.  \n- Highlighted expertise in **React** and **TypeScript** for creating engaging and responsive user experiences.\n\n#### **Customer Churn Prediction**  \n- Created a web interface to visualize predictive analytics for customer churn in the telecom industry.  \n- Integrated an **Artificial Neural Network** for data analysis and retention strategy recommendations.  \n- Showcased ability to combine **frontend technologies** with data-driven insights for business solutions.\n\n#### **Hospital Management System**  \n- Designed a GUI-based system to manage patient records and appointments using **local file handling** for backend storage.  \n- Focused on intuitive user interface design and efficient data handling, demonstrating strong frontend development skills.  \n\nThese projects reflect a solid foundation in **frontend development**, **data visualization**, and **user-centric design**, aligning with the requirements of a Frontend Developer role.",
+  "TAILORING_SCORE": "8 / 10"
+}

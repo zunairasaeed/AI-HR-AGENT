@@ -1,3 +1,6 @@
+
+####################workig fne below code have only checks to know which step of matchin we are at 
+
 # import os
 # import json
 # import re
@@ -14,7 +17,8 @@
 #     "nice_to_have": 3,
 #     "bonus": 2
 # }
-# QUALIFICATION_PERCENTAGE = 60
+
+# QUALIFICATION_PERCENTAGE = 75
 
 # def normalize_text(text):
 #     return re.sub(r'\s+', ' ', text.lower().strip())
@@ -29,32 +33,6 @@
 
 # def match_keywords(context_words, keywords):
 #     return list(set([kw for kw in keywords if normalize_text(kw) in context_words]))
-
-# # def call_llm_summary(resume_data, job_role, job_keywords):
-# #     system_prompt = "You are a helpful assistant that analyzes resumes for job relevance."
-# #     user_prompt = f"""
-# # You are given the following candidate resume:
-
-# # Name: {resume_data.get('name')}
-# # Skills: {resume_data.get('skills')}
-# # Certificates: {resume_data.get('certificates')}
-# # Experience: {resume_data.get('experience')}
-# # Projects: {resume_data.get('projects')}
-# # Keywords: {resume_data.get('keywords')}
-
-# # Match this candidate to the job role: "{job_role}".
-
-# # The job requires:
-# # - Must-have: {job_keywords.get("must_have", [])}
-# # - Nice-to-have: {job_keywords.get("nice_to_have", [])}
-# # - Bonus/Tools: {job_keywords.get("bonus", [])}
-
-# # Return a short reasoning (3-4 lines) on whether this candidate is a good fit or not.
-# # """
-# #     response = call_gpt(system_prompt, user_prompt)
-# #     return response or "LLM could not generate summary."
-
-
 
 # def call_llm_summary(resume_data, job_role, job_keywords):
 #     system_prompt = "You are a helpful assistant that analyzes resumes for job relevance."
@@ -114,6 +92,7 @@
 #     else:
 #         matched_jobs = {}
 
+#     # 🔄 ✅ UPDATED MATCHING LOGIC: Always match every job and record the result, even if empty
 #     for role, job in jobs_data.items():
 #         matched_summary = {}
 #         total_score = 0
@@ -165,12 +144,11 @@
 #         json.dump(result, out, indent=4)
 
 
-
-# def main():
+# def run_matching():
 #     jobs_data = {}
 
 #     # 🔁 Load each parsed JD file
-#     for file in os.listdir(JOBS_FILE):  # JOBS_FILE is a directory
+#     for file in os.listdir(JOBS_FILE):
 #         if file.endswith(".json"):
 #             filepath = os.path.join(JOBS_FILE, file)
 #             with open(filepath, "r", encoding="utf-8") as f:
@@ -184,10 +162,13 @@
 #                             jobs_data[job_title] = {
 #                                 "must_have": job.get("must_have_skills", []),
 #                                 "nice_to_have": job.get("nice_to_have_skills", []),
-#                                 "bonus": job.get("tools", [])
+#                                 "bonus": job.get("tools", []),
+#                                 "responsibilities": job.get("responsibilities", []),
+#                                 "requirements": job.get("requirements", []),
+#                                 "description": job.get("description", "")
 #                             }
 
-#                 # ✅ Case 2: File contains a list directly → list of job dicts
+#                 # ✅ Case 2: List of job dicts
 #                 elif isinstance(jd_content, list):
 #                     for job in jd_content:
 #                         job_title = job.get("job_title")
@@ -195,25 +176,34 @@
 #                             jobs_data[job_title] = {
 #                                 "must_have": job.get("must_have_skills", []),
 #                                 "nice_to_have": job.get("nice_to_have_skills", []),
-#                                 "bonus": job.get("tools", [])
+#                                 "bonus": job.get("tools", []),
+#                                 "responsibilities": job.get("responsibilities", []),
+#                                 "requirements": job.get("requirements", []),
+#                                 "description": job.get("description", "")
 #                             }
 
-#                 # ✅ Case 3: Single job post as dict
+#                 # ✅ Case 3: Single job dict
 #                 elif isinstance(jd_content, dict) and "job_title" in jd_content:
 #                     job_title = jd_content.get("job_title", file.replace(".json", ""))
 #                     jobs_data[job_title] = {
 #                         "must_have": jd_content.get("must_have_skills", []),
 #                         "nice_to_have": jd_content.get("nice_to_have_skills", []),
-#                         "bonus": jd_content.get("tools", [])
+#                         "bonus": jd_content.get("tools", []),
+#                         "responsibilities": jd_content.get("responsibilities", []),
+#                         "requirements": jd_content.get("requirements", []),
+#                         "description": jd_content.get("description", "")
 #                     }
 
-#                 # ✅ Case 4: Custom dict format with job titles as top-level keys
+#                 # ✅ Case 4: Custom dict format with job titles as keys
 #                 elif isinstance(jd_content, dict):
 #                     for job_title, job in jd_content.items():
 #                         jobs_data[job_title] = {
 #                             "must_have": job.get("must_have", []),
 #                             "nice_to_have": job.get("nice_to_have", []),
-#                             "bonus": job.get("bonus", [])
+#                             "bonus": job.get("bonus", []),
+#                             "responsibilities": job.get("responsibilities", []),
+#                             "requirements": job.get("requirements", []),
+#                             "description": job.get("description", "")
 #                         }
 
 #     # ✅ Compute max scores
@@ -224,6 +214,14 @@
 #         if resume_file.endswith(".json"):
 #             process_resume(resume_file, jobs_data, job_max_scores)
 
+# # 🔥 Optional for standalone execution
+# if __name__ == "__main__":
+#     run_matching()
+
+
+
+
+
 
 
 import os
@@ -232,9 +230,10 @@ import re
 from app.llm_utils import call_gpt
 
 # === CONFIGURATION ===
-RESUMES_DIR = "data/json/llm_normalized"
-JOBS_FILE = "data/jobs/parsed_jd"
-RESULTS_DIR = "data/json/llm_results"
+RESUMES_DIR = os.getenv("LLM_NORMALIZED_DIR", "data/json/llm_normalized")
+JOBS_FILE = os.getenv("COMBINED_JD_DIR", "data/jobs/parsed_jd/combined")
+RESULTS_DIR = os.getenv("LLM_RESULTS_DIR", "data/json/llm_results")
+SESSION_LOCK_PATH = os.getenv('SESSION_LOCK_PATH', os.path.join('data', 'session_lock.json'))
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 CATEGORY_WEIGHTS = {
@@ -243,7 +242,7 @@ CATEGORY_WEIGHTS = {
     "bonus": 2
 }
 
-QUALIFICATION_PERCENTAGE = 85
+QUALIFICATION_PERCENTAGE = 75
 
 def normalize_text(text):
     return re.sub(r'\s+', ' ', text.lower().strip())
@@ -260,6 +259,9 @@ def match_keywords(context_words, keywords):
     return list(set([kw for kw in keywords if normalize_text(kw) in context_words]))
 
 def call_llm_summary(resume_data, job_role, job_keywords):
+    # Allow skipping for speed
+    if os.getenv('SKIP_LLM_SUMMARY', '1') == '1':
+        return "(summary skipped)"
     system_prompt = "You are a helpful assistant that analyzes resumes for job relevance."
     user_prompt = f"""
 You are given the following candidate resume:
@@ -286,10 +288,23 @@ Return a short reasoning (3-4 lines) on whether this candidate is a good fit or 
     response = call_gpt(system_prompt, user_prompt)
     return response or "LLM could not generate summary."
 
+def _load_session_resumes_filter():
+    try:
+        if os.path.exists(SESSION_LOCK_PATH):
+            with open(SESSION_LOCK_PATH, 'r', encoding='utf-8') as f:
+                data = json.load(f) or {}
+            return set(data.get('resumes', []))
+    except Exception:
+        pass
+    return None
+
 def collect_max_scores(jobs_data):
     max_scores = {role: 0 for role in jobs_data}
+    filter_set = _load_session_resumes_filter()
     for resume_file in os.listdir(RESUMES_DIR):
         if not resume_file.endswith(".json"):
+            continue
+        if filter_set is not None and resume_file not in filter_set:
             continue
         with open(os.path.join(RESUMES_DIR, resume_file), 'r', encoding='utf-8') as f:
             resume_data = json.load(f)
@@ -306,19 +321,18 @@ def process_resume(file_name, jobs_data, job_max_scores):
     with open(resume_path, 'r', encoding='utf-8') as f:
         resume_data = json.load(f)
 
+    print(f"\n🟢 Processing resume: {file_name} (Candidate: {resume_data.get('name', 'Unknown')})")
+
     context_words = get_match_context(resume_data)
     result_path = os.path.join(RESULTS_DIR, file_name.replace(".json", "__matches.json"))
 
-    # Load existing result if exists
-    if os.path.exists(result_path):
-        with open(result_path, "r", encoding="utf-8") as f:
-            existing_result = json.load(f)
-        matched_jobs = {job["job_role"]: job for job in existing_result.get("matched_jobs", [])}
-    else:
-        matched_jobs = {}
+    # Always start fresh for current session
+    matched_jobs = {}
 
     # 🔄 ✅ UPDATED MATCHING LOGIC: Always match every job and record the result, even if empty
     for role, job in jobs_data.items():
+        print(f"   🔎 Matching candidate '{resume_data.get('name', 'Unknown')}' → Job: {role}")
+
         matched_summary = {}
         total_score = 0
         bonus_score = 0
@@ -368,8 +382,11 @@ def process_resume(file_name, jobs_data, job_max_scores):
     with open(result_path, "w", encoding="utf-8") as out:
         json.dump(result, out, indent=4)
 
+    print(f"✅ Finished matching for: {file_name} (results saved → {result_path})")
+
 
 def run_matching():
+    print("\n🚀 Starting Matching Pipeline...\n")
     jobs_data = {}
 
     # 🔁 Load each parsed JD file
@@ -431,14 +448,29 @@ def run_matching():
                             "description": job.get("description", "")
                         }
 
+    print(f"📂 Loaded {len(jobs_data)} job roles from JD files.")
+
+    # ✅ Check if we have any jobs to match against
+    if not jobs_data:
+        print("⚠️ No job descriptions found. Skipping matching step.")
+        return
+
     # ✅ Compute max scores
     job_max_scores = collect_max_scores(jobs_data)
+    print("📊 Max scores computed for all jobs.")
 
     # ✅ Match each resume
-    for resume_file in os.listdir(RESUMES_DIR):
-        if resume_file.endswith(".json"):
-            process_resume(resume_file, jobs_data, job_max_scores)
+    filter_set = _load_session_resumes_filter()
+    resumes = [f for f in os.listdir(RESUMES_DIR) if f.endswith('.json') and (filter_set is None or f in filter_set)]
+    for resume_file in resumes:
+        process_resume(resume_file, jobs_data, job_max_scores)
+
+    print("\n🎉 All matching completed! Results saved in:", RESULTS_DIR)
 
 # 🔥 Optional for standalone execution
 if __name__ == "__main__":
     run_matching()
+
+
+
+

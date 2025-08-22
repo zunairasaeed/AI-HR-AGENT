@@ -1,0 +1,229 @@
+{
+    "resume_file": "eman ijaz.json",
+    "candidate_name": "Eman Ijaz",
+    "email": "ijaze155@gmail.com",
+    "phone": "923344001396",
+    "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+    "matched_jobs": [
+        {
+            "job_role": "Azure Data Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 38,
+            "final_percentage": 13.16,
+            "qualified": false,
+            "llm_summary": "Eman Ijaz is not a good fit for the Azure Data Engineer role. While the candidate demonstrates strong technical skills in embedded systems, PCB design, and Python programming, their experience and projects lack direct relevance to Azure cloud technologies, big data tools (e.g., Databricks, PySpark), data architecture, and governance. Additionally, they do not have the required certifications or hands-on experience with Azure-specific tools and platforms."
+        },
+        {
+            "job_role": "Python Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 21,
+            "final_percentage": 23.81,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Machine Learning Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 24,
+            "final_percentage": 20.83,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "DevOps Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "scripting"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Full Stack Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 0,
+            "bonus_score": 0,
+            "max_score_among_candidates": 25,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Software QA Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Frontend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 0,
+            "bonus_score": 0,
+            "max_score_among_candidates": 20,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Data Analyst",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "excel"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 10,
+            "bonus_score": 0,
+            "max_score_among_candidates": 29,
+            "final_percentage": 34.48,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        },
+        {
+            "job_role": "Backend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 0,
+            "bonus_score": 0,
+            "max_score_among_candidates": 11,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary."
+        }
+    ]
+}

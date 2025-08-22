@@ -1,0 +1,27 @@
+{
+  "CANDIDATE_NAME": "Linta Rehman Qureshi",
+  "TARGET_JOB": "Frontend Developer",
+  "TEMPLATE_USED": "Word Template",
+  "Personal Info": "Name: Linta Rehman Qureshi\nEmail: lintarehman121@gmail.com\nPhone: 03330405299\nLinkedin: https://www.linkedin.com/in/linta-rehman-a5663a305",
+  "Profile": "**  \nMotivated and detail-oriented Frontend Developer with a strong foundation in modern web technologies, including React, TypeScript, JavaScript, HTML, CSS, and Responsive Design. Proficient in Git for version control and collaborative development. Demonstrated expertise in creating dynamic, user-centric applications through hands-on project experience, including building scalable social media platforms and cross-platform mobile applications. Adept at transforming complex concepts into intuitive and visually appealing interfaces. Committed to delivering high-quality, maintainable code and continuously expanding technical knowledge through certifications and self-driven learning.",
+  "Skills": "- Git\n- React\n- Responsive Design\n- TypeScript\n- css\n- html\n- javascript",
+  "Certifications": "\n- Flutter Application Authorized\n- Python for Cyber Security",
+  "Functional Skills": [
+    "```python\n[\"User Interface Design\"",
+    "\"Responsive Design\"",
+    "\"Cross-Browser Compatibility\"",
+    "\"Problem Solving\"",
+    "\"Collaboration\"",
+    "\"Attention to Detail\"",
+    "\"Time Management\"]\n```"
+  ],
+  "Business Sector": [
+    "IT Services",
+    "Software Development"
+  ],
+  "Languages": "- English\n- Urdu",
+  "Work Experience": "**\n\nWhile the candidate does not have formal work experience, the following project-based experience demonstrates relevant skills and practical application in frontend development:\n\n---\n\n**Frontend Developer (Project-Based Experience)**  \n*Self-Initiated Projects*  \n*Dates: Ongoing*\n\n- **Interactify**:  \n  - Spearheaded the frontend development of a social media platform with a focus on user-centric design and security.  \n  - Built responsive interfaces using **React**, **CSS**, and **TypeScript**, ensuring seamless user interactions across devices.  \n  - Collaborated with backend developers to integrate APIs, enhancing features like Collaboration Episodes, Face Authentication, and storytelling-enabled Stories.  \n\n- **Game Store Mobile Application**:  \n  - Designed and developed a cross-platform mobile application for online game sales.  \n  - Leveraged **HTML**, **CSS**, and **JavaScript** to create responsive web views and integrated them into the Flutter framework.  \n  - Implemented user authentication and real-time database functionalities, ensuring a secure and dynamic user experience.  \n\n- **Cricket Win Predictor**:  \n  - Contributed to the frontend visualization of predictive analytics for cricket match outcomes.  \n  - Utilized **JavaScript** to create interactive data visualizations, enhancing user engagement with statistical insights.  \n\n- **Hospital Networking Topology**:  \n  - Designed and implemented a user-friendly interface for visualizing hospital network connections.  \n  - Focused on responsive design principles to ensure accessibility across devices.  \n\n---\n\nThis section highlights the candidate's ability to apply frontend development skills in real-world scenarios, showcasing expertise in **React**, **TypeScript**, **JavaScript**, and **Responsive Design**.",
+  "Education": "**BS**, Riphah International University (2021 - 2025)",
+  "Projects": "**  \n\n**Interactify**  \nDesigned and developed a social media platform focused on user empowerment and security. Key features included Collaboration Episodes, Face Authentication, storytelling-enabled Stories, and DM Group functionality. While primarily leveraging Django REST Framework for backend development and Flutter for the cross-platform interface, contributed to frontend design principles such as responsive layouts and user-centric interactivity.  \n\n**Game Store Mobile Application**  \nBuilt a cross-platform mobile application for online game sales, integrating real-time database functionalities and user authentication. Utilized Flutter for UI/UX design and Firebase for backend services, ensuring seamless user experiences across devices. Applied responsive design techniques to optimize usability.  \n\n**Cricket Win Predictor**  \nDeveloped a data-driven model to predict cricket match outcomes by analyzing historical datasets of over 100,000 rows. While primarily focused on Python and data science libraries, contributed to frontend visualization of insights, ensuring clarity and accessibility for users.  \n\n**Hospital Networking Topology**  \nDesigned a hospital networking topology to optimize communication and data transfer between branches and departments. Focused on dynamic routing and efficient data flow, ensuring seamless connectivity. Though primarily a backend and infrastructure project, demonstrated an understanding of frontend considerations for user-facing interfaces.",
+  "TAILORING_SCORE": "8 / 10"
+}

@@ -5,9 +5,11 @@ from tqdm import tqdm
 from app.llm_utils import call_gpt  # ✅ Your GPT wrapper
 
 # 📁 File paths
-RAW_FILE = os.path.join('data', 'json', 'raw_data.json')
-OUTPUT_DIR = os.path.join('data', 'json', 'llm_normalized')
+# Allow env overrides from pipeline_runner
+RAW_FILE = os.getenv('RAW_FILE', os.path.join('data', 'json', 'raw_data','raw_data.json'))
+OUTPUT_DIR = os.getenv('LLM_NORMALIZED_DIR', os.path.join('data', 'json', 'llm_normalized'))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+SESSION_LOCK_PATH = os.getenv('SESSION_LOCK_PATH', os.path.join('data', 'session_lock.json'))
 
 # -------------------------------
 # ✅ Regex-based extractors
@@ -150,6 +152,7 @@ def run_llm_parsing():
     with open(RAW_FILE, 'r', encoding='utf-8') as f:
         resumes = json.load(f)  # ✅ This is a list
 
+    processed_normalized_files = []
     for entry in tqdm(resumes):  # ✅ Loop through the list
         filename = entry.get("filename", "unknown")
         raw_text = entry.get("raw_text", "")
@@ -160,30 +163,28 @@ def run_llm_parsing():
         safe_name = re.sub(r'[^\w\-_ ]', '_', candidate_name).strip().lower()
         output_path = os.path.join(OUTPUT_DIR, f"{safe_name}.json")
 
-        # ✅ Update if file exists, otherwise create new
-        if os.path.exists(output_path):
-            # 🔄 Load existing content
-            with open(output_path, 'r', encoding='utf-8') as existing_file:
+        # ✅ Always overwrite to avoid mixing with previous sessions
+        with open(output_path, 'w', encoding='utf-8') as out_file:
+            json.dump(result, out_file, indent=2, ensure_ascii=False)
+        print(f"💾 Wrote: {candidate_name} → {output_path}")
+
+        processed_normalized_files.append(os.path.basename(output_path))
+
+    # ✳️ Update session lock so downstream steps can limit to current input only
+    try:
+        os.makedirs(os.path.dirname(SESSION_LOCK_PATH), exist_ok=True)
+        session_data = {}
+        if os.path.exists(SESSION_LOCK_PATH):
+            with open(SESSION_LOCK_PATH, 'r', encoding='utf-8') as sf:
                 try:
-                    existing_data = json.load(existing_file)
+                    session_data = json.load(sf) or {}
                 except json.JSONDecodeError:
-                    existing_data = {}
-
-            # 🔁 Update existing data with new info
-            existing_data.update(result)
-
-            # 💾 Save updated content
-            with open(output_path, 'w', encoding='utf-8') as out_file:
-                json.dump(existing_data, out_file, indent=2, ensure_ascii=False)
-
-            print(f"🔄 Updated: {candidate_name} → {output_path}")
-
-        else:
-            # 🆕 Save new file
-            with open(output_path, 'w', encoding='utf-8') as out_file:
-                json.dump(result, out_file, indent=2, ensure_ascii=False)
-
-            print(f"✅ Saved: {candidate_name} → {output_path}")
+                    session_data = {}
+        session_data['resumes'] = processed_normalized_files
+        with open(SESSION_LOCK_PATH, 'w', encoding='utf-8') as sf:
+            json.dump(session_data, sf, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"⚠️ Could not update session lock for resumes: {e}")
 
     print("\n🎉 All resumes processed with LLM parsing.")
 

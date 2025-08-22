@@ -1,0 +1,373 @@
+{
+    "Python Developer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 21,
+            "bonus_score": 4,
+            "final_percentage": 104.0,
+            "qualified": true,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql",
+                        "algorithms",
+                        "python"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "aws",
+                        "git"
+                    ],
+                    "score": 6
+                },
+                "bonus": {
+                    "matched": [
+                        "aws",
+                        "git"
+                    ],
+                    "score": 4
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 10,
+            "bonus_score": 0,
+            "final_percentage": 47.62,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "django",
+                        "python"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 23.81,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        }
+    ],
+    "Frontend Developer": [
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 15,
+            "bonus_score": 0,
+            "final_percentage": 100.0,
+            "qualified": true,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 3,
+            "bonus_score": 2,
+            "final_percentage": 22.0,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        }
+    ],
+    "Data Analyst": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 29,
+            "bonus_score": 6,
+            "final_percentage": 106.0,
+            "qualified": true,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "excel",
+                        "sql",
+                        "dashboards",
+                        "python"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "matplotlib",
+                        "tableau",
+                        "seaborn"
+                    ],
+                    "score": 9
+                },
+                "bonus": {
+                    "matched": [
+                        "matplotlib",
+                        "tableau",
+                        "seaborn"
+                    ],
+                    "score": 6
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 10,
+            "bonus_score": 0,
+            "final_percentage": 34.48,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "excel",
+                        "python"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 17.24,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        }
+    ],
+    "Backend Developer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 11,
+            "bonus_score": 4,
+            "final_percentage": 104.0,
+            "qualified": true,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "aws",
+                        "git"
+                    ],
+                    "score": 6
+                },
+                "bonus": {
+                    "matched": [
+                        "aws",
+                        "git"
+                    ],
+                    "score": 4
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 45.45,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "authentication"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "(ranking summary skipped)",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        }
+    ]
+}

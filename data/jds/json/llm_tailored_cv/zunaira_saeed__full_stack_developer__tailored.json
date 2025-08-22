@@ -1,0 +1,27 @@
+{
+  "CANDIDATE_NAME": "Zunaira Saeed",
+  "TARGET_JOB": "Full Stack Developer",
+  "TEMPLATE_USED": "Word Template",
+  "Personal Info": "Name: Zunaira Saeed\nEmail: zunairasaeed988@gmail.com\nPhone: 92 3478404160\nLinkedin: https://www.linkedin.com/in/zunaira-saeed-",
+  "Profile": "**  \nInnovative and detail-oriented Full Stack Developer with a strong foundation in web development, database management, and cloud computing. Proficient in modern technologies such as React.js, Node.js, RESTful APIs, and SQL, with hands-on experience in building responsive applications and data-driven systems. Adept at leading teams, mentoring peers, and organizing workshops to promote hands-on learning and technical growth. Demonstrated ability to design and implement scalable solutions, including GUI-based management systems, predictive analytics platforms, and interactive applications. Skilled in fostering community engagement and partnerships to create impactful opportunities. Passionate about leveraging technology to solve complex problems and deliver user-centric solutions.",
+  "Skills": "- Git\n- HTML/CSS\n- Node.js\n- RESTful APIs\n- React.js\n- css\n- html\n- javascript\n- react\n- sql",
+  "Certifications": "\n- ",
+  "Functional Skills": [
+    "```python\n[\"Problem Solving\"",
+    "\"Team Collaboration\"",
+    "\"Critical Thinking\"",
+    "\"Adaptability\"",
+    "\"Time Management\"",
+    "\"Attention to Detail\"",
+    "\"Requirement Analysis\"]\n```"
+  ],
+  "Business Sector": [
+    "IT Services",
+    "Software Development"
+  ],
+  "Languages": "- English\n- Urdu",
+  "Work Experience": "**\n\n**Director General**  \n*ACM UET*  \n- Spearheaded collaborative initiatives, mentoring teams and organizing high-impact technology events.  \n- Conducted workshops to enhance students' technical skills and foster innovation.  \n\n**Cloud Computing Lead**  \n*ACM UET*  \n- Led the Cloud Computing team, mentoring members in cloud technologies and promoting hands-on learning.  \n- Designed and delivered workshops to build expertise in cloud infrastructure and deployment.  \n\n**Event Organizer**  \n*ACM UET*  \n- Co-organized UTS 6.0, managing event logistics, securing sponsorships, and ensuring successful execution.  \n\n**Community Outreach Head**  \n*Cybersecurity Society*  \n- Established partnerships with organizations to create professional development opportunities for students.  \n- Facilitated networking initiatives to connect students with industry professionals.",
+  "Education": "**BSc.**, University of Engineering and Technology, Lahore (03/2025 - 03/2026)\n\n**FSc.**, Punjab Group of Colleges (08/2020 - 05/2022)",
+  "Projects": "**\n\n- **Bank Management System**  \n  Developed a comprehensive banking application using Object-Oriented Programming principles. Integrated a SQL database to manage customer accounts and transactions, and implemented a user-friendly GUI for seamless interaction.\n\n- **Hospital Management System**  \n  Designed and implemented a GUI-based system to manage patient records and appointments. Utilized local file handling for backend storage, ensuring efficient data organization and retrieval.\n\n- **Customer Engagement System**  \n  Built a database management and visualization platform to streamline supplier and dealer data organization. Leveraged Power BI and a custom web dashboard to generate detailed reports and interactive charts for enhanced decision-making.\n\n- **Customer Churn Prediction**  \n  Trained an Artificial Neural Network on telecom industry datasets to predict customer churn. Developed a web interface to visualize churn rates, retention strategies, and predictive analytics, enabling actionable insights.\n\n- **Kids Phonics Game**  \n  Created a responsive, multi-platform phonics learning application for children aged 1\u20137, aligned with the U.S. curriculum. Integrated recorded voice data for interactive learning and deployed the app across web, desktop, and mobile platforms.\n\n- **Water Level Indicator**  \n  Engineered a 10-level water tank monitoring system with an alarm mechanism to notify users when the tank is full. Designed using basic electronic components for cost-effective implementation.\n\n- **DC Charger (5V)**  \n  Constructed a 5V DC charger using a step-down transformer and rectification process to deliver a stable power output for small electronic devices.\n\n- **Number Guessing Game Circuit**  \n  Developed a digital number guessing game using ICs, featuring a built-in timer and LED feedback system. Simulated random number generation and limited attempts to enhance user engagement.",
+  "TAILORING_SCORE": "7 / 10"
+}

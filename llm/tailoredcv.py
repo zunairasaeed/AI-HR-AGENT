@@ -11,12 +11,13 @@ from docx.shared import Pt
 from difflib import get_close_matches
 
 # === CONFIG ===
-RANKED_DIR = "data/json/rank_candidates_by_job"
-PARSED_DIR = "data/json/llm_normalized"
+RANKED_DIR = os.getenv("RANK_BY_JOB_DIR", "data/json/rank_candidates_by_job")
+PARSED_DIR = os.getenv("LLM_NORMALIZED_DIR", "data/json/llm_normalized")
 TEMPLATE_META_DIR = "templates/json_extracted_template"
-OUTPUT_DIR = "data/json/llm_tailored_cv"
-DOCX_OUTPUT_DIR = "data/json/tailored_cv_docx"
-LLM_RESULTS_DIR = "data/json/llm_results"
+OUTPUT_DIR = os.getenv("TAILORED_JSON_DIR", "data/json/llm_tailored_cv")
+DOCX_OUTPUT_DIR = os.getenv("TAILORED_DOCX_DIR", "data/json/tailored_cv_docx")
+LLM_RESULTS_DIR = os.getenv("LLM_RESULTS_DIR", "data/json/llm_results")
+SESSION_LOCK_PATH = os.getenv('SESSION_LOCK_PATH', os.path.join('data', 'session_lock.json'))
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(DOCX_OUTPUT_DIR, exist_ok=True)
@@ -594,6 +595,18 @@ def convert_tailored_json_to_docx(candidate_name, job_title):
 
 
 
+def _load_session_resumes_filter():
+    try:
+        if os.path.exists(SESSION_LOCK_PATH):
+            with open(SESSION_LOCK_PATH, 'r', encoding='utf-8') as f:
+                data = json.load(f) or {}
+            # Build a normalized set of candidate base names from saved normalized resume files
+            raw_names = [os.path.basename(p).replace('.json', '') for p in data.get('resumes', [])]
+            return set([normalize_string(n) for n in raw_names]) or None
+    except Exception:
+        pass
+    return None
+
 def tailor_all():
     template_sections, template_name = load_template_structure()
     docx_template_path = "templates/Word Template.docx"
@@ -603,6 +616,8 @@ def tailor_all():
         print("❌ No ranking JSON files found in rank_candidates_by_job.")
         return
 
+    filter_candidates = _load_session_resumes_filter()
+    created_files: list[str] = []
     for ranking_file in ranking_files:
         ranking_path = os.path.join(RANKED_DIR, ranking_file)
         print(f"\n📁 Processing ranking file: {ranking_file}")
@@ -617,17 +632,32 @@ def tailor_all():
                 candidates = entry.get("ranked_candidates", [])
                 if candidates and isinstance(candidates, list):
                     candidate_name = candidates[0].get("candidate_name", "")
+                    if filter_candidates is not None and normalize_string(candidate_name) not in filter_candidates:
+                        continue
                     if candidate_name:
                         tailor_candidate_to_job(candidate_name, job_title, template_sections, template_name)
                         convert_tailored_json_to_docx(candidate_name, job_title, )
+                        created_files.append(f"{candidate_name.lower().replace(' ', '_')}__{job_title.lower().replace(' ', '_')}__tailored.docx")
 
         elif isinstance(rankings, dict):
             for job_title, candidates in rankings.items():
                 if candidates and isinstance(candidates, list):
                     candidate_name = candidates[0].get("candidate_name", "")
+                    if filter_candidates is not None and normalize_string(candidate_name) not in filter_candidates:
+                        continue
                     if candidate_name:
                         tailor_candidate_to_job(candidate_name, job_title, template_sections, template_name)
                         convert_tailored_json_to_docx(candidate_name, job_title, )
+                        created_files.append(f"{candidate_name.lower().replace(' ', '_')}__{job_title.lower().replace(' ', '_')}__tailored.docx")
+
+    # Write manifest of created files for downstream endpoints (zipping/listing)
+    try:
+        manifest_path = os.path.join(OUTPUT_DIR, "tailored_manifest.json")
+        with open(manifest_path, "w", encoding="utf-8") as mf:
+            json.dump({"files": created_files}, mf, indent=2)
+        print(f"🧾 Tailored manifest written: {manifest_path} ({len(created_files)} files)")
+    except Exception as e:
+        print(f"⚠️ Failed to write tailored manifest: {e}")
 
 
 if __name__ == "__main__":

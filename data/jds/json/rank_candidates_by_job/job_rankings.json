@@ -1,0 +1,1118 @@
+{
+    "Azure Data Engineer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 38,
+            "bonus_score": 8,
+            "final_percentage": 108.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is highly qualified for the Azure Data Engineer role, achieving an exceptional score of 108%, which indicates they exceeded the evaluation criteria. Their skills and expertise align strongly with the job requirements, demonstrating proficiency in key areas without any notable gaps.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Azure Synapse Analytics",
+                        "PowerShell",
+                        "Azure Data Factory",
+                        "SQL",
+                        "Databricks",
+                        "HDInsight",
+                        "Python"
+                    ],
+                    "score": 35
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "Power BI"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "Azure Synapse Analytics",
+                        "HDInsight",
+                        "Azure Data Factory",
+                        "Databricks"
+                    ],
+                    "score": 8
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 13,
+            "bonus_score": 0,
+            "final_percentage": 34.21,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 34.21% for the Azure Data Engineer role, indicating a significant gap in meeting the required criteria. The candidate likely lacked proficiency in key technical skills or experience essential for the position, such as Azure services, data engineering tools, or relevant certifications.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python",
+                        "SQL"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "Power BI"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 13.16,
+            "qualified": false,
+            "llm_ranking_summary": "The candidate, Eman Ijaz, scored 13.16% for the Azure Data Engineer role, indicating a significant gap in meeting the required qualifications. They likely lacked key technical skills or experience in Azure data engineering tools and practices, which are critical for the role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 13.16,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 13.16% for the Azure Data Engineer role, indicating a significant gap in meeting the required qualifications. The candidate likely lacked key technical skills or experience with Azure data engineering tools and concepts, which are critical for the role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Python Developer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 21,
+            "bonus_score": 4,
+            "final_percentage": 104.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is ranked highly for the Python Developer role, scoring an exceptional 104%, which indicates they exceeded the evaluation criteria. They demonstrated strong proficiency in Python and related skills, meeting and surpassing the job requirements. No significant gaps in their qualifications were noted.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "sql",
+                        "algorithms"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git",
+                        "aws"
+                    ],
+                    "score": 6
+                },
+                "bonus": {
+                    "matched": [
+                        "git",
+                        "aws"
+                    ],
+                    "score": 4
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 18,
+            "bonus_score": 2,
+            "final_percentage": 87.71,
+            "qualified": true,
+            "llm_ranking_summary": "Zunaira Saeed scored 87.71% for the Python Developer role, indicating strong proficiency in Python and related skills. They met the job criteria well, demonstrating solid technical expertise and problem-solving abilities, though there may be minor gaps in advanced or niche areas. Overall, they are well-qualified for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "oop",
+                        "sql"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "mysql"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "mysql"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 10,
+            "bonus_score": 0,
+            "final_percentage": 47.62,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 47.62% for the Python Developer role, indicating they lacked several key skills or failed to meet critical criteria for the position. While they may have demonstrated some foundational knowledge, their performance suggests gaps in technical expertise or problem-solving abilities required for the role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "django"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 23.81,
+            "qualified": false,
+            "llm_ranking_summary": "The candidate, Eman Ijaz, scored 23.81% for the Python Developer role, indicating a significant gap in meeting the required criteria. They likely lacked proficiency in key technical skills or failed to demonstrate adequate knowledge in Python development and related tools, making them unqualified for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Machine Learning Engineer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 24,
+            "bonus_score": 6,
+            "final_percentage": 106.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is highly qualified for the Machine Learning Engineer role, scoring an exceptional 106%, which indicates exceeding expectations across the evaluation criteria. The candidate demonstrated strong expertise in machine learning concepts, tools, and problem-solving, meeting and surpassing the required skills with no significant gaps.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "machine learning",
+                        "deep learning"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "azure ml",
+                        "matplotlib",
+                        "seaborn"
+                    ],
+                    "score": 9
+                },
+                "bonus": {
+                    "matched": [
+                        "azure ml",
+                        "matplotlib",
+                        "seaborn"
+                    ],
+                    "score": 6
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 8,
+            "bonus_score": 2,
+            "final_percentage": 35.33,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 35.33% for the Machine Learning Engineer role, indicating they lacked several key skills or qualifications required for the position. They may not have met critical criteria such as proficiency in machine learning algorithms, programming expertise, or relevant project experience, which impacted their overall evaluation.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 20.83,
+            "qualified": false,
+            "llm_ranking_summary": "Eman Ijaz scored 20.83% for the Machine Learning Engineer role, indicating they lacked several key skills or qualifications required for the position. They may not have demonstrated strong proficiency in core areas like machine learning algorithms, programming, or relevant experience, which are critical for this role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 20.83,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 20.83% for the Machine Learning Engineer role, indicating a significant gap in meeting the required criteria. The candidate likely lacked key technical skills, such as proficiency in machine learning frameworks, programming expertise, or relevant project experience, which are essential for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "DevOps Engineer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 8,
+            "bonus_score": 2,
+            "final_percentage": 102.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is highly qualified for the DevOps Engineer role, as evidenced by their exceptional score of 102.0%, which exceeds standard evaluation metrics. They have demonstrated strong expertise in the required skills and met the criteria exceptionally well, showcasing proficiency in both technical and collaborative aspects of DevOps.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "aws"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "grafana"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "grafana"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_ranking_summary": "Eman Ijaz scored 62.5% and is not qualified for the DevOps Engineer role due to lacking some key skills or experience required for the position. While they may have met certain criteria, their overall performance suggests gaps in critical areas such as automation, cloud infrastructure, or CI/CD pipelines.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "scripting"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 62.5% and is not qualified for the DevOps Engineer role. While they may have demonstrated some foundational knowledge, they likely lacked key skills or experience in critical areas such as automation, CI/CD pipelines, or cloud infrastructure, which are essential for the role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "networking"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 0.0% for the DevOps Engineer role, indicating they did not meet the required criteria. The candidate likely lacked essential skills or experience in key areas such as CI/CD pipelines, cloud platforms, or infrastructure automation, which are critical for this position.",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Full Stack Developer": [
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 25,
+            "bonus_score": 0,
+            "final_percentage": 100.0,
+            "qualified": true,
+            "llm_ranking_summary": "Zunaira Saeed is ranked highly for the Full Stack Developer role, achieving a perfect score of 100% and meeting all the required criteria exceptionally well. Their qualifications and skills align seamlessly with the job requirements, demonstrating strong expertise in both front-end and back-end development with no notable skill gaps.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql",
+                        "react",
+                        "html",
+                        "javascript",
+                        "css"
+                    ],
+                    "score": 25
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 23,
+            "bonus_score": 2,
+            "final_percentage": 94.0,
+            "qualified": true,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 94% for the Full Stack Developer role, demonstrating strong proficiency in both front-end and back-end development, meeting the key technical and problem-solving criteria exceptionally well. Their high score indicates they are well-qualified, with no significant skill gaps noted.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "authentication",
+                        "css",
+                        "javascript"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "firebase"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "firebase"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 8,
+            "bonus_score": 2,
+            "final_percentage": 34.0,
+            "qualified": false,
+            "llm_ranking_summary": "Barkaat Ali scored 34.0% and is not qualified for the Full Stack Developer role. The candidate likely lacked key technical skills or failed to meet important criteria such as proficiency in programming languages, frameworks, or problem-solving abilities essential for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "Eman Ijaz scored 0.0% and is not qualified for the Full Stack Developer role. This indicates a significant lack of alignment with the job requirements, likely due to missing key technical skills, relevant experience, or failing to meet the evaluation criteria.",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Software QA Engineer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 8,
+            "bonus_score": 2,
+            "final_percentage": 102.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is ranked highly for the Software QA Engineer role, scoring an exceptional 102.0%, which indicates they exceeded the required criteria. They demonstrated strong expertise in QA processes, testing methodologies, and problem-solving skills, making them well-qualified for the position. No significant skill gaps were noted.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_ranking_summary": "Eman Ijaz scored 62.5% and is not qualified for the Software QA Engineer role. While they may have met some of the criteria, they likely lacked key skills or experience essential for the position, such as advanced testing methodologies, automation expertise, or attention to detail in quality assurance processes.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 62.5% and is not qualified for the Software QA Engineer role. While they may have met some of the criteria, they likely lacked key skills or experience essential for the position, such as advanced testing methodologies, automation expertise, or attention to detail in quality assurance processes.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 62.5% and is not qualified for the Software QA Engineer role. While they may have demonstrated some relevant skills, they likely lacked key qualifications or expertise required for the position, such as advanced testing methodologies, tools proficiency, or attention to detail in quality assurance processes.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Frontend Developer": [
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 20,
+            "bonus_score": 0,
+            "final_percentage": 100.0,
+            "qualified": true,
+            "llm_ranking_summary": "Zunaira Saeed achieved a perfect score of 100%, demonstrating exceptional proficiency in frontend development. They met all the required criteria, showcasing strong skills in relevant technologies, design principles, and problem-solving. This indicates they are highly qualified for the role with no notable skill gaps.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "css",
+                        "react",
+                        "javascript"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 15,
+            "bonus_score": 0,
+            "final_percentage": 75.0,
+            "qualified": true,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 75% and is qualified for the Frontend Developer role. They demonstrated strong proficiency in key frontend skills and met most of the job criteria well. However, there may be room for improvement in certain advanced or specialized areas, which slightly impacted their overall score.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "css",
+                        "javascript"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 3,
+            "bonus_score": 2,
+            "final_percentage": 17.0,
+            "qualified": false,
+            "llm_ranking_summary": "Barkaat Ali scored 17.0% for the Frontend Developer role, indicating a significant gap in meeting the required criteria. The candidate likely lacked proficiency in key frontend skills such as HTML, CSS, JavaScript, or relevant frameworks, which are essential for the role.",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "git"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "The candidate, Eman Ijaz, scored 0.0% and is not qualified for the Frontend Developer role. This indicates a significant lack of alignment with the required skills or criteria for the position, such as proficiency in frontend technologies, coding expertise, or relevant experience.",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Data Analyst": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 29,
+            "bonus_score": 6,
+            "final_percentage": 106.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is highly qualified for the Data Analyst role, scoring an exceptional 106.0%, which indicates they exceeded the evaluation criteria. Their performance suggests a strong mastery of relevant skills and expertise, with no significant gaps identified.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "sql",
+                        "dashboards",
+                        "excel"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "seaborn",
+                        "matplotlib",
+                        "tableau"
+                    ],
+                    "score": 9
+                },
+                "bonus": {
+                    "matched": [
+                        "seaborn",
+                        "matplotlib",
+                        "tableau"
+                    ],
+                    "score": 6
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 13,
+            "bonus_score": 2,
+            "final_percentage": 46.83,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 46.83% and is not qualified for the Data Analyst role. While they may have demonstrated some relevant skills, they likely lacked proficiency in key areas such as data analysis tools, statistical methods, or problem-solving capabilities required for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "sql"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "jupyter"
+                    ],
+                    "score": 2
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 10,
+            "bonus_score": 0,
+            "final_percentage": 34.48,
+            "qualified": false,
+            "llm_ranking_summary": "Eman Ijaz scored 34.48% for the Data Analyst role, indicating they lacked several key skills or qualifications required for the position. They may not have demonstrated strong proficiency in critical areas such as data analysis tools, statistical methods, or problem-solving, which are essential for this role.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "excel"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 17.24,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 17.24% for the Data Analyst role, indicating a significant gap in meeting the job criteria. The candidate likely lacked essential skills such as data analysis proficiency, technical expertise (e.g., SQL, Python, or Excel), or relevant experience required for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ],
+    "Backend Developer": [
+        {
+            "candidate_name": "Barkaat Ali",
+            "email": "barkaatali199@gmail.com",
+            "phone": "0308-5616873",
+            "linkedin": "",
+            "total_score": 11,
+            "bonus_score": 4,
+            "final_percentage": 104.0,
+            "qualified": true,
+            "llm_ranking_summary": "Barkaat Ali is highly qualified for the Backend Developer role, achieving an exceptional score of 104%, which indicates they exceeded the evaluation criteria. They demonstrated strong proficiency in backend development skills and likely showcased advanced expertise or innovative solutions, making them an excellent fit for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "git",
+                        "aws"
+                    ],
+                    "score": 6
+                },
+                "bonus": {
+                    "matched": [
+                        "git",
+                        "aws"
+                    ],
+                    "score": 4
+                }
+            },
+            "rank": 1
+        },
+        {
+            "candidate_name": "Linta Rehman Qureshi",
+            "email": "lintarehman121@gmail.com",
+            "phone": "03330405299",
+            "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 45.45,
+            "qualified": false,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 45.45% for the Backend Developer role, indicating they lacked key skills or experience required for the position. While they may have met some basic criteria, their technical proficiency or alignment with the job's core requirements was insufficient for qualification.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "authentication"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 2
+        },
+        {
+            "candidate_name": "Zunaira Saeed",
+            "email": "zunairasaeed988@gmail.com",
+            "phone": "92 3478404160",
+            "linkedin": "https://www.linkedin.com/in/zunaira-saeed-",
+            "total_score": 5,
+            "bonus_score": 0,
+            "final_percentage": 45.45,
+            "qualified": false,
+            "llm_ranking_summary": "Zunaira Saeed scored 45.45% for the Backend Developer role and is not qualified for the position. While they may have demonstrated some foundational knowledge, they likely lacked critical skills or experience required for backend development, such as proficiency in relevant programming languages, frameworks, or problem-solving abilities.",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "sql"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 3
+        },
+        {
+            "candidate_name": "Eman Ijaz",
+            "email": "ijaze155@gmail.com",
+            "phone": "923344001396",
+            "linkedin": "https://www.linkedin.com/in/eman-ijaz-7013ab256/",
+            "total_score": 0,
+            "bonus_score": 0,
+            "final_percentage": 0.0,
+            "qualified": false,
+            "llm_ranking_summary": "The candidate, Eman Ijaz, scored 0.0% for the Backend Developer role, indicating they did not meet the required criteria. They likely lacked essential skills or experience relevant to backend development, such as proficiency in programming languages, frameworks, or problem-solving abilities necessary for the position.",
+            "matched": {
+                "must_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "rank": 4
+        }
+    ]
+}

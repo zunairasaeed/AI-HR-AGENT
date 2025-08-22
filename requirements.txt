@@ -1,4 +1,4 @@
-openai
+openai>=1.14.0
 fastapi
 uvicorn
 python-dotenv
@@ -10,3 +10,5 @@ pymupdf
 tqdm
 pdfminer.six
 PyPDF2
+jinja2
+requests

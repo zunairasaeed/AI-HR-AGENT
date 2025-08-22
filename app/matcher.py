@@ -93,17 +93,7 @@
 #             process_resume(resume_file, jobs_data)
 
 # if __name__ == "__main__":
-#     main()
-
-
-
-
-
-
-
-
-
-
+#     main
 
 
 import os

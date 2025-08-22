@@ -1,0 +1,263 @@
+{
+    "candidate": {
+        "name": "Linta Rehman Qureshi",
+        "email": "lintarehman121@gmail.com",
+        "phone": "03330405299",
+        "linkedin": "https://www.linkedin.com/in/linta-rehman-a5663a305"
+    },
+    "ranked_jobs": [
+        {
+            "job_role": "Full Stack Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "authentication",
+                        "css",
+                        "javascript"
+                    ],
+                    "score": 20
+                },
+                "nice_to_have": {
+                    "matched": [
+                        "firebase"
+                    ],
+                    "score": 3
+                },
+                "bonus": {
+                    "matched": [
+                        "firebase"
+                    ],
+                    "score": 2
+                }
+            },
+            "total_score": 23,
+            "bonus_score": 2,
+            "max_score_among_candidates": 25,
+            "final_percentage": 94.0,
+            "qualified": true,
+            "llm_summary": "Linta Rehman Qureshi has relevant skills in JavaScript, HTML, CSS, Firebase, and REST API development, which align with some of the must-have and nice-to-have requirements. However, they lack experience with Node.js, React, Express, SQL, and version control tools like Git, which are critical for the Full Stack Developer role. While they demonstrate strong project experience, they are not a strong match for this role due to missing key technical requirements.",
+            "rank": 1,
+            "llm_ranking_summary": "Linta Rehman Qureshi ranked highly for the Full Stack Developer role with an impressive score of 94.0, indicating strong qualifications. Their expertise likely spans both front-end and back-end development, showcasing a well-rounded skill set. While specific strengths or gaps aren't detailed, their high score suggests proficiency in key technical and problem-solving areas critical for the role."
+        },
+        {
+            "job_role": "Frontend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "html",
+                        "css",
+                        "javascript"
+                    ],
+                    "score": 15
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 15,
+            "bonus_score": 0,
+            "max_score_among_candidates": 20,
+            "final_percentage": 75.0,
+            "qualified": true,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 2,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 75.0, which is a solid score, indicating she meets the qualifications for the Frontend Developer role. Her strengths likely include a strong grasp of relevant technical skills, such as HTML, CSS, and JavaScript, as well as a good understanding of frontend frameworks. However, the score suggests there may be room for improvement in either advanced technical expertise, problem-solving, or specific tools relevant to the role."
+        },
+        {
+            "job_role": "DevOps Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "networking"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 3,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 62.5, which is slightly below the typical qualification threshold for the DevOps Engineer role. While the score indicates some foundational knowledge or skills in DevOps, it suggests gaps in key areas such as advanced automation, CI/CD pipelines, or cloud infrastructure expertise. Strengths or specific competencies were not strong enough to offset these gaps, leading to a \"Not Qualified\" status."
+        },
+        {
+            "job_role": "Software QA Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 8,
+            "final_percentage": 62.5,
+            "qualified": false,
+            "llm_summary": "Linta Rehman Qureshi is not a strong fit for the Software QA Engineer role. While the candidate has Python skills, which align with the must-have requirements, they lack experience or skills in manual testing, test automation tools (e.g., Selenium, JUnit), and QA-specific practices like test planning, bug reporting, and regression testing. Additionally, there is no mention of familiarity with QA tools or methodologies.",
+            "rank": 4,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 62.5, which is below the qualification threshold for the Software QA Engineer role, indicating a moderate performance. While the candidate may have demonstrated some relevant skills, their score suggests gaps in key areas such as technical expertise, testing methodologies, or problem-solving abilities. Strengths or specific qualifications were not sufficient to offset these gaps."
+        },
+        {
+            "job_role": "Python Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python",
+                        "django"
+                    ],
+                    "score": 10
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 10,
+            "bonus_score": 0,
+            "max_score_among_candidates": 21,
+            "final_percentage": 47.62,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 5,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 47.62, which is relatively low for the Python Developer role, falling below the qualification threshold. This suggests gaps in key areas such as technical proficiency, problem-solving, or relevant experience. While specific strengths are not highlighted, improving Python expertise or project experience could enhance their candidacy for similar roles in the future."
+        },
+        {
+            "job_role": "Backend Developer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "authentication"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 11,
+            "final_percentage": 45.45,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 6,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 45.45, which is relatively low for the Backend Developer role, resulting in a \"Not Qualified\" status. This score suggests gaps in key technical skills or experience required for the position, such as proficiency in backend frameworks, databases, or coding efficiency. While specific strengths were not highlighted, the score indicates room for improvement in core competencies critical to the role."
+        },
+        {
+            "job_role": "Machine Learning Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 24,
+            "final_percentage": 20.83,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 7,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 20.83, which is relatively low for the Machine Learning Engineer role, indicating significant gaps in meeting the job requirements. The candidate may lack proficiency in key technical skills such as advanced machine learning algorithms, programming expertise, or relevant project experience. Strengths were not prominent enough to offset these gaps, leading to a \"Not Qualified\" status."
+        },
+        {
+            "job_role": "Data Analyst",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 29,
+            "final_percentage": 17.24,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 8,
+            "llm_ranking_summary": "Linta Rehman Qureshi received a score of 17.24, which is relatively low for the Data Analyst role, indicating gaps in meeting the required qualifications or skills. While specific strengths were not highlighted, the score suggests potential deficiencies in key areas such as technical proficiency, analytical skills, or relevant experience. Further development in these areas may improve future prospects."
+        },
+        {
+            "job_role": "Azure Data Engineer",
+            "matched": {
+                "must_have": {
+                    "matched": [
+                        "Python"
+                    ],
+                    "score": 5
+                },
+                "nice_to_have": {
+                    "matched": [],
+                    "score": 0
+                },
+                "bonus": {
+                    "matched": [],
+                    "score": 0
+                }
+            },
+            "total_score": 5,
+            "bonus_score": 0,
+            "max_score_among_candidates": 38,
+            "final_percentage": 13.16,
+            "qualified": false,
+            "llm_summary": "LLM could not generate summary.",
+            "rank": 9,
+            "llm_ranking_summary": "Linta Rehman Qureshi scored 13.16, which is relatively low for the Azure Data Engineer role, indicating gaps in key qualifications or skills required for the position. While the specific strengths or weaknesses are not detailed, the score suggests that the candidate may lack proficiency in critical areas such as Azure data services, ETL processes, or advanced data engineering concepts. This likely contributed to their \"Not Qualified\" status."
+        }
+    ]
+}

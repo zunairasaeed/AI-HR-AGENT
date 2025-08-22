@@ -573,8 +573,9 @@ import os
 import shutil
 import zipfile
 import json
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, Query
 from fastapi.responses import JSONResponse, FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 # ===== Load ENV =====
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -586,7 +587,25 @@ except Exception:
     print("✅ ENV LOADED: (not set)")
 
 # ===== Setup App =====
-app = FastAPI()
+app = FastAPI(title="AI HR Agent API", version="1.0.0")
+
+# ===== CORS Middleware =====
+# Allow requests from Streamlit frontend and local development
+origins = [
+    "http://localhost:8501",  # Local Streamlit
+    "http://127.0.0.1:8501",  # Local Streamlit alternative
+    "https://*.streamlit.app",  # Streamlit Cloud
+    "https://*.fly.dev",  # Fly.io deployments
+    "*"  # Allow all origins for development (remove in production)
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # === Setup Upload Directories (original project folders) ===
 RESUME_DIR = PROJECT_ROOT / "data" / "resumes"
@@ -632,8 +651,8 @@ def create_session_lock(uploaded_resumes, uploaded_jds):
 async def upload_and_process(
     resumes: list[UploadFile] = File(..., description="Upload up to 5 resumes"),
     jds: list[UploadFile] = File(None, description="Upload up to 2 JDs (optional)"),
-    use_default_template: bool = False,
-    template_file: UploadFile | None = File(None, description="Optional resume template (DOCX/PDF)")
+    use_default_template: bool = Query(True, description="Use default template if no custom template provided"),
+    template_file: UploadFile | None = File(default=None, description="Optional resume template (DOCX/PDF)")
 ):
     try:
         # ==== Validate Counts ====
